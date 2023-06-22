@@ -39,10 +39,10 @@ public class UserController {
             Container.userStatusMap.put(chatId, UserStatus.SEND_FIO);
             Container.userMap.put(chatId, new User());
 
-            sendMessage.setText("""
-                    Murojaatingizni yo'llash uchun tilni tanlang.👇\n----------------------------------------------
-                    Выберите язык для использования 👇
-                    """);
+            sendMessage.setText(
+                   " Murojaatingizni yo'llash uchun tilni tanlang.👇\n----------------------------------------------"+
+                    "\nВыберите язык для использования 👇"
+                    );
             ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
             replyKeyboardMarkup.setResizeKeyboard(true);
             replyKeyboardMarkup.setSelective(true);
@@ -79,19 +79,19 @@ public class UserController {
                     Container.userStatusMap.put(chatId, UserStatus.FINALLY);
                     if (languageStatus.equals(LanguageStatus.LANGUAGE_UZ)) {
                         sendMessage.setText(
-                                """
-                                                📝Sizning savolingiz aniq, lo‘nda, tushunarli bo‘lishi hamda matn mazmunida fikringiz to‘liq o‘z aksini topishi lozim.
-                                                                 
-                                        🎥Murojaatingizni @jurnalist0202 ga yuborishingiz mumkin!
-                                        """);
+
+                                        "        📝Sizning savolingiz aniq, lo‘nda, tushunarli bo‘lishi hamda matn mazmunida fikringiz to‘liq o‘z aksini topishi lozim."+
+
+                                    "\n🎥Murojaatingizni @jurnalist0202 ga yuborishingiz mumkin!"
+                                        );
                         Container.MyBot.sendMsg(sendMessage);
                     } else if (languageStatus.equals(LanguageStatus.LANGUAGE_RU)) {
                         sendMessage.setText(
-                                """
-                                                📝Ваш вопрос должен быть ясным, лаконичным и понятным, полностью отражать ваше мнение в содержании текста.
+
+                                          "      📝Ваш вопрос должен быть ясным, лаконичным и понятным, полностью отражать ваше мнение в содержании текста."+
                                                                                 
-                                        🎥Вы можете направить свои обращения на @journalist0202!
-                                        """);
+                                        "\n🎥Вы можете направить свои обращения на @journalist0202!"
+                                        );
                         Container.MyBot.sendMsg(sendMessage);
                     }
                 }
@@ -107,24 +107,24 @@ public class UserController {
                     Container.userStatusMap.put(chatId, UserStatus.FINALLY);
                     if (languageStatus.equals(LanguageStatus.LANGUAGE_UZ)) {
                         sendMessage.setText(
-                                """
-                                                👨🏻‍💼⁉️Qaysi partiya vakiliga murojaat yo'llamoqchisiz?\s
+
+                                              "👨🏻‍💼⁉️Qaysi partiya vakiliga murojaat yo'llamoqchisiz?"+
+
+                                        "\nVideomurojaat davomiyligi 1 daqiqadan ko’p bo’lmasligi hamda sifati 720/1024 full hd variantda bo’lishi lozim."+
+
+                                        "\n🎥Videomurojaatni @jurnalist0202 ga yuborishingiz mumkin!"
                                                                                 
-                                        Videomurojaat davomiyligi 1 daqiqadan ko’p bo’lmasligi hamda sifati 720/1024 full hd variantda bo’lishi lozim.
-                                                                                
-                                        🎥Videomurojaatni @jurnalist0202 ga yuborishingiz mumkin!
-                                                                                
-                                        """);
+                                        );
                         Container.MyBot.sendMsg(sendMessage);
                     } else if (languageStatus.equals(LanguageStatus.LANGUAGE_RU)) {
                         sendMessage.setText(
-                                """
-                                                👨🏻‍💼⁉️К представителю какой партии Вы хотите обратиться?
+
+                                               " 👨🏻‍💼⁉️К представителю какой партии Вы хотите обратиться?"+
                                                                                 
-                                        🎥Продолжительность видеообращения не должна превышать 1 минуты, а качество должно быть в варианте 720/1024 Full HD.
+                                      "\n  🎥Продолжительность видеообращения не должна превышать 1 минуты, а качество должно быть в варианте 720/1024 Full HD."+
                                                                                 
-                                        🎥Вы можете направить свои видеообращения на @journalist0202!
-                                        """);
+                                       "\n 🎥Вы можете направить свои видеообращения на @journalist0202!"
+                                       );
                         Container.MyBot.sendMsg(sendMessage);
                     }
                 }

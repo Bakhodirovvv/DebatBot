@@ -1,1 +1,1 @@
-worker: sh target/bin/ProjectDebat2023
+ProjectDebat2023: sh target/bin/ProjectDebat2023

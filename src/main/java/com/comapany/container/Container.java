@@ -11,8 +11,8 @@ import java.util.Map;
 
 public class Container {
 
-    public static String TOKEN = "5909611520:AAGZYs-7FmX1LYWMykKs1N2MB-CgcLP0kTw";
-    public static String BotUserNAME = "https://t.me/debat2023birnima_bot";
+    public static String TOKEN = "6282377658:AAFlxqXSfj1oh5nkyMRPOW1qSdmbOKvjIVw";
+    public static String BotUserNAME = "https://t.me/Debat_2023bot";
     public static MyBot MyBot=null;
     public static String ADMIN_CHAT_ID="1339810632";
 

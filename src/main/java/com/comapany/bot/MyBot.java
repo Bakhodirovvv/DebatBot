@@ -16,12 +16,12 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 public class MyBot extends TelegramLongPollingBot {
     @Override
     public String getBotUsername() {
-        return Container.BotUserNAME="http://t.me/debat2023birnima_bot";
+        return Container.BotUserNAME="http://t.me/Debat_2023bot";
     }
 
     @Override
     public String getBotToken() {
-        return Container.TOKEN="6079936421:AAGI8Fsa0gxr1WPTaonsfwS_qo-KVlfeGYo";
+        return Container.TOKEN="6282377658:AAFlxqXSfj1oh5nkyMRPOW1qSdmbOKvjIVw";
     }
 
     @Override
